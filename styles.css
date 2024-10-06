@@ -1,0 +1,117 @@
+.calculator {
+    border: 5px solid black;
+    max-width: 800px;
+    background-color: rgb(65, 65, 65);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 790px;
+    height: 60px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: rgb(200, 200, 150);
+    color: rgb(25, 25, 25);
+    padding: 0 8px 0 5px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.calc-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-column {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    border: 5px solid black;
+    margin: 6px;
+    width: 96px;
+    border: none;
+    height: 40px;
+    border-radius: 6px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+background-color: black;
+color: white;
+transition: .4s;
+}
+
+.actions {
+    background-color: rgb(255, 105, 0);
+}
+
+.digits {
+    background-color: rgb(80, 80, 80);
+}
+
+.basic-operations {
+    background-color: rgb(125, 125, 125);
+}
+
+.complex-operations {
+    background-color: rgb(100, 150, 100);
+} 
+
+@media (max-width: 870px) {
+    input[type=text] {
+        margin-left: 15px;
+        width: 750px;
+    }
+}
+
+@media (max-width: 840px) {
+    input[type=text] {
+        margin-left: 0px;
+        width: 740px;
+    }
+}
+
+@media (max-width: 800px) {
+    .calculator {
+        width: 750px;
+    }
+
+    input[type=text] {
+        margin-left: 0px;
+        width: 97%;
+    }
+
+    .button {
+        width: 80px;
+    }
+}
+
+@media (max-width: 420px) {
+    .calculator {
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calc-buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-column {
+        display: flex;
+        flex-direction: row;
+    }
+}
